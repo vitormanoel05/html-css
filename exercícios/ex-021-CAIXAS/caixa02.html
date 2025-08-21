@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #4F6F8C;
+            margin: 0;
+        }
+
+        header {
+            background-color: #F0F1F2;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 13px;
+
+            /*
+            border-top-left-radius: 13px
+            border-top-right-radius: 13px
+            border-bottom-left-radius: 13px
+            border-bottom-right-radius: 13px
+            */
+        }
+
+        nav {
+            background-color: #BF463B;
+            padding: 3px;
+            box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.54);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #F0F1F2;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-size: 18px;
+        }
+
+        main {
+            background-color: #F0F1F2;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 13px;
+        }
+
+        article {
+            background-color: #BBD8F2;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #F2C744;
+        }
+
+        footer {
+            background-color: #BF463B;
+            color: #F0F1F2;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        /*
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: #F0F1F2;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        */
+    </style>
+</head>
+<body>
+    <!-- Grouping Tags Semânticas para organização do conteúdo -->
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p> Esportes • Política • Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Artigo do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente deserunt sit accusamus nesciunt! Repellendus blanditiis minima saepe error nemo minus quis recusandae dignissimos? Dicta error obcaecati labore a illum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem repudiandae quaerat natus officiis harum necessitatibus qui vitae commodi, ratione rem deserunt similique maxime! Similique sunt autem quod, quam maxime officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae illum reiciendis quasi esse quaerat quas voluptas molestias illo, corrupti placeat cum, nobis fuga minima quis expedita asperiores itaque accusantium.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícia do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime placeat ea atque eos, rem totam nemo similique, quo, consequuntur commodi quibusdam molestiae nesciunt rerum! Labore dolorem minus earum laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, quisquam. Itaque, vero. Optio quidem eum tempore enim provident necessitatibus consectetur itaque architecto dolore, quaerat, dolorem sunt laudantium distinctio eaque culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus soluta laborum totam rem dolores consequatur ducimus deserunt id facere quo, repudiandae debitis beatae repellendus qui omnis dicta pariatur architecto eum!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <!--
+    <div id="bola"></div>
+    -->
+</body>
+</html>
