@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos Fundos</title>
+
+    <style>
+        body {
+            /*
+            background-image: url('https://cdn.inspireuplift.com/uploads/images/seller_products/63659/iu_1714142929_1.png');
+            background-size: 100px 100px;
+            background-repeat:repeat-y;
+            */
+            background-color: darkorchid;
+        }
+
+        h1 {
+            color: #f2f2f2;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid #f2f2f2;
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+            background-image: url('https://cdn.inspireuplift.com/uploads/images/seller_products/63659/iu_1714142929_1.png');
+            background-size: 100px 100px;
+        }
+
+        div#div1 {
+            background-repeat: repeat;
+        }
+
+        div#div2 {
+            background-repeat: no-repeat;
+        }
+
+        div#div3 {
+            background-repeat: repeat-x;
+        }
+
+        div#div4 {
+            background-repeat: repeat-y;
+        }
+
+        div > h2 {
+            color: gold;
+            background-color: rgba(0, 0, 0, 0.342);
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Aplicação de Fundo</h1>
+
+    <div class="quadrado" id="div1">
+        <h2>reapeat</h2>
+    </div>
+    
+    <div class="quadrado" id="div2">
+        <h2>no-reapeat</h2>
+    </div>
+    
+    <div  class="quadrado" id="div3">
+        <h2>reapet-x</h2>
+    </div>
+
+    <div  class="quadrado" id="div4">
+        <h2>reapeat-y</h2>
+    </div>
+</body>
+</html>
