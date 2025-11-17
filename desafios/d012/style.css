@@ -1,19 +1,29 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-01: Verdana, Geneva, Tahoma, sans-serif;
+    --font-02: "Montserrat Alternates", sans-serif;
+}
+
 * { /* CONFIGURAÇÕES GERAIS para resetar todos os nossos elementos */
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font-01);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--font-02);
 }
 
 header > h1 {
@@ -21,6 +31,7 @@ header > h1 {
     /* text-transform: uppercase;
     Deixa todas as letra maiúsculas */
     font-variant: small-caps; /* Todas as letras ficam maiúsculas, mas a primeira de cada palavra fica maior do que as demais. */
+    font-size: 10vw;
 }
 
 header > p {
@@ -42,6 +53,9 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--font-02);
+    font-size: 3.5vw;
+    font-style: italic;
 }
 
 section.normal {
@@ -55,7 +69,7 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display:inline-block; /* Vai transformar naquela caixa que se adapta ao tamanho do conteúdo. */
     background-color: rgba(0, 0, 0, 0.521);
 }
 
