@@ -54,8 +54,12 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--font-02);
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     font-style: italic;
+}
+
+section > p.paragrafo {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -66,11 +70,26 @@ section.normal {
 section.imagem {
     background-color: rgb(12, 12, 12);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display:inline-block; /* Vai transformar naquela caixa que se adapta ao tamanho do conteúdo. */
-    background-color: rgba(0, 0, 0, 0.521);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.515);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../d012/imagens/background001.jpg');
+    background-position: right center;
+
+}
+
+section#img02 {
+    background-image: url('../d012/imagens/background002.jpg');
 }
 
 footer {
